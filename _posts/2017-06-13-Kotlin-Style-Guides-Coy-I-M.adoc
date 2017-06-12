@@ -2,7 +2,7 @@
 
 Official? https://github.com/JetBrains/kotlin-web-site/blob/64218469db3f746ab1f4a1c4c569c21d654d665f/pages/docs/reference/coding-conventions.md
 
-Adam Benet: https://github.com/ditn/KotlinStyleGuide
+Adam Bennet: https://github.com/ditn/KotlinStyleGuide
 
 == CoyIM (via Ola Bini)
 
