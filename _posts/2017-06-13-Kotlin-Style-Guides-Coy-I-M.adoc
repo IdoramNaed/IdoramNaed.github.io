@@ -1,4 +1,5 @@
 = Kotlin Style Guides,CoyIM
+:toc:
 
 == Kotlin Style Guides
 
