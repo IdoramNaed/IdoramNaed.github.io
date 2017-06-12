@@ -2,3 +2,30 @@
 :published_at: 2017-06-12 13:36
 
 Test *Test* _Test_
+
+== 2017-06-12 MON
+
+.links-
+. ACTION_BOOT_COMPLETED, IntentService, and Android 8.0
++
+https://commonsware.com/blog/2017/06/12/action_boot_completed-intentservice-android-8p0.html
+. Kotlin by Example (by Hadi Hariri)
++
+http://hadihariri.com/2017/06/12/kotlin-by-example/
+.. _mark-code_
++
+https://github.com/hhariri/mark-code
+. Raspberry Pi Starter Kit and Kotlin/Native
++
+http://hadihariri.com/2017/05/28/raspberry-pi-starter-kit-and-kotlin-native/
+. Kotlin - A deeper look
++
+https://hackernoon.com/kotlin-a-deeper-look-8569d4da36f
+.. `apply`
+.. `with`
+.. `let`
+.. `run`
+. Competitve Programmer\'s Handbook
++
+https://github.com/pllk/cphb
+
