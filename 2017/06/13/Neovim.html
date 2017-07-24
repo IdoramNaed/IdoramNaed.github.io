@@ -23,7 +23,7 @@
     <meta property="og:description" content="Neovim supports XDG configuration https://gregjs.com/vim/2015/no-more-nvimrc-neovim-folder-now-at-config-nvim/ mv ~/.nvim ~/.config/nvim mv ~/.nvimrc ~/.config/nvim/init.vim xdg_user_dirs https://www.gregjs.com/linux/2015/fixing-the-reappearing-folders-problem-in-your-home-direc..." />
     <meta property="og:url" content="https://IdoramNaed.github.io/2017/06/13/Neovim.html" />
     <meta property="article:published_time" content="2017-06-12T22:00:00.000Z" />
-    <meta property="article:modified_time" content="2017-07-24T21:09:11.063Z" />
+    <meta property="article:modified_time" content="2017-07-24T21:29:30.853Z" />
     <meta property="article:tag" content="neovim" />
     <meta property="article:tag" content="xdg" />
     <meta property="article:tag" content="xdg_configuration" />
@@ -48,7 +48,7 @@
     "headline": "Neovim",
     "url": "https://IdoramNaed.github.io/2017/06/13/Neovim.html",
     "datePublished": "2017-06-12T22:00:00.000Z",
-    "dateModified": "2017-07-24T21:09:11.063Z",
+    "dateModified": "2017-07-24T21:29:30.853Z",
     "keywords": "neovim,  xdg,  xdg_configuration",
     "description": "Neovim supports XDG configuration https://gregjs.com/vim/2015/no-more-nvimrc-neovim-folder-now-at-config-nvim/ mv ~/.nvim ~/.config/nvim mv ~/.nvimrc ~/.config/nvim/init.vim xdg_user_dirs https://www.gregjs.com/linux/2015/fixing-the-reappearing-folders-problem-in-your-home-direc..."
 }
@@ -82,7 +82,9 @@
         </header>
 
         <section class="post-content">
-            <div class="olist arabic">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>Neovim supports XDG configuration</p>
@@ -112,7 +114,106 @@ mv ~/.nvimrc ~/.config/nvim/init.vim</code></pre>
 </ol>
 </div>
 </li>
+<li>
+<p>Modularization (Neovim config file)</p>
+<div class="paragraph">
+<p><a href="https://gregjs.com/vim/2016/do-yourself-a-favor-and-modularize-your-vimrc-init-vim/" class="bare">https://gregjs.com/vim/2016/do-yourself-a-favor-and-modularize-your-vimrc-init-vim/</a></p>
+</div>
+<div class="listingblock">
+<div class="title"><code>init.vim</code></div>
+<div class="content">
+<pre>source $HOME/.config/nvim/config/init.vimrc
+source $HOME/.config/nvim/config/general.vimrc
+source $HOME/.config/nvim/config/plugins.vimrc
+source $HOME/.config/nvim/config/keys.vimrc
+source $HOME/.config/nvim/config/line.vimrc</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><code>init.vimrc</code> holds <code>vim-plug</code> section</p>
+</li>
+<li>
+<p><code>general.vimrc</code> holds a bunch of general settings which
+didn’t fit in the other categories.</p>
+</li>
+<li>
+<p><code>plugins.vimrc</code> holds all my plugin-specific settings.</p>
+</li>
+<li>
+<p><code>keys.vimrc</code> holds all my custom key-bindings.</p>
+</li>
+<li>
+<p><code>line.vimrc</code> holds my <code>statusline</code> configuration.</p>
+</li>
 </ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_neovim_and_go">Neovim and Go</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://medium.com/@ambot/neovim-and-go-8f32e6390f71" class="bare">https://medium.com/@ambot/neovim-and-go-8f32e6390f71</a></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>vim-go</code></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>format-on-save (by default <code>go-fmt</code>)</p>
+<div class="listingblock">
+<div class="title"><code>goimports</code></div>
+<div class="content">
+<pre>let g:go_fmt_command = "goimports"</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Refactoring <code>:GoRename</code>  (try the <em>godoctor</em> plugin for more refactoring features)</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p><a href="https://github.com/godoctor/godoctor.vim" class="bare">https://github.com/godoctor/godoctor.vim</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Execution/testing with <code>:GoTest</code>, <code>:GoInstall</code> and <code>:GoRun</code></p>
+</li>
+<li>
+<p>Source code analysis with <code>:GoDef</code>, <code>:GoReferrers</code> and <code>:GoImplements</code></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><code>deoplete</code></p>
+</li>
+<li>
+<p>`delve</p>
+</li>
+<li>
+<p><code>vim-godebug</code></p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_sharing_config_with_vim">Sharing config with vim</h3>
+<div class="listingblock">
+<div class="content">
+<pre></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
         </section>
 
