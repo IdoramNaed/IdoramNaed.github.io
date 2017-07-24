@@ -23,7 +23,7 @@
     <meta property="og:description" content="Neovim supports XDG configuration https://gregjs.com/vim/2015/no-more-nvimrc-neovim-folder-now-at-config-nvim/ mv ~/.nvim ~/.config/nvim mv ~/.nvimrc ~/.config/nvim/init.vim xdg_user_dirs https://www.gregjs.com/linux/2015/fixing-the-reappearing-folders-problem-in-your-home-direc..." />
     <meta property="og:url" content="https://IdoramNaed.github.io/2017/06/13/Neovim.html" />
     <meta property="article:published_time" content="2017-06-12T22:00:00.000Z" />
-    <meta property="article:modified_time" content="2017-07-24T21:29:30.853Z" />
+    <meta property="article:modified_time" content="2017-07-24T21:33:43.096Z" />
     <meta property="article:tag" content="neovim" />
     <meta property="article:tag" content="xdg" />
     <meta property="article:tag" content="xdg_configuration" />
@@ -48,7 +48,7 @@
     "headline": "Neovim",
     "url": "https://IdoramNaed.github.io/2017/06/13/Neovim.html",
     "datePublished": "2017-06-12T22:00:00.000Z",
-    "dateModified": "2017-07-24T21:29:30.853Z",
+    "dateModified": "2017-07-24T21:33:43.096Z",
     "keywords": "neovim,  xdg,  xdg_configuration",
     "description": "Neovim supports XDG configuration https://gregjs.com/vim/2015/no-more-nvimrc-neovim-folder-now-at-config-nvim/ mv ~/.nvim ~/.config/nvim mv ~/.nvimrc ~/.config/nvim/init.vim xdg_user_dirs https://www.gregjs.com/linux/2015/fixing-the-reappearing-folders-problem-in-your-home-direc..."
 }
@@ -208,8 +208,33 @@ didn’t fit in the other categories.</p>
 <div class="sect2">
 <h3 id="_sharing_config_with_vim">Sharing config with vim</h3>
 <div class="listingblock">
+<div class="title"><code>bash</code></div>
 <div class="content">
-<pre></pre>
+<pre>ln -s ~/.vimrc ~/.config/nvim/init.vim</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title"><code>.vimrc</code></div>
+<div class="content">
+<pre>call plug#begin('~/.vim/plugged')
+Plug 'fatih/vim-go' # Amazing combination of features.
+Plug 'godoctor/godoctor.vim' # Some refactoring tools
+if !has('nvim')
+ Plug 'maralla/completor.vim' " or whichever you use
+endif
+if has('nvim')
+ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+ Plug 'zchee/deoplete-go', {'build': {'unix': 'make'}}
+ Plug 'jodosha/vim-godebug' " Debugger integration via delve
+endif
+" All of your Plugs must be added before the following line
+call plug#end()</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>:PlugInstall
+:GoInstallBinaries</pre>
 </div>
 </div>
 </div>
