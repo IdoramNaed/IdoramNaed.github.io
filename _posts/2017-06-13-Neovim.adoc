@@ -1,5 +1,5 @@
 = Neovim
-:hp-tags: neovim, xdg,xdg_configuration
+:hp-tags: neovim, xdg, xdg_configuration
 
 . Neovim supports XDG configuration
 +
