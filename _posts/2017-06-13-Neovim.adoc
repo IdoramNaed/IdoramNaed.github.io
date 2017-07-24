@@ -19,3 +19,49 @@ https://www.gregjs.com/linux/2015/fixing-the-reappearing-folders-problem-in-your
 # file:
 ~/.config/user-dirs.dirs
 ----
+
+. Modularization (Neovim config file)
++
+https://gregjs.com/vim/2016/do-yourself-a-favor-and-modularize-your-vimrc-init-vim/
++
+.`init.vim`
+----
+source $HOME/.config/nvim/config/init.vimrc
+source $HOME/.config/nvim/config/general.vimrc
+source $HOME/.config/nvim/config/plugins.vimrc
+source $HOME/.config/nvim/config/keys.vimrc
+source $HOME/.config/nvim/config/line.vimrc
+----
+
+.. `init.vimrc` holds `vim-plug` section
+.. `general.vimrc` holds a bunch of general settings which  
+ didn’t fit in the other categories.
+.. `plugins.vimrc` holds all my plugin-specific settings.
+.. `keys.vimrc` holds all my custom key-bindings.
+.. `line.vimrc` holds my `statusline` configuration.
+
+== Neovim and Go
+
+https://medium.com/@ambot/neovim-and-go-8f32e6390f71
+
+. `vim-go`
+.. format-on-save (by default `go-fmt`)
++
+.`goimports`
+----
+let g:go_fmt_command = "goimports"
+----
+
+.. Refactoring `:GoRename`  (try the _godoctor_ plugin for more refactoring features)
+... https://github.com/godoctor/godoctor.vim
+.. Execution/testing with `:GoTest`, `:GoInstall` and `:GoRun`
+.. Source code analysis with `:GoDef`, `:GoReferrers` and `:GoImplements`
+. `deoplete`
+. `delve
+. `vim-godebug`
+
+=== Sharing config with vim
+
+----
+
+----
