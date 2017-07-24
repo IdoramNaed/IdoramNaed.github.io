@@ -11,4 +11,11 @@ mv ~/.nvim ~/.config/nvim
 mv ~/.nvimrc ~/.config/nvim/init.vim
 ----
 
-
+.. `xdg_user_dirs`
++
+https://www.gregjs.com/linux/2015/fixing-the-reappearing-folders-problem-in-your-home-directory/
++
+----
+# file:
+~/.config/user-dirs.dirs
+----
