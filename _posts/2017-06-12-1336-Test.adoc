@@ -51,3 +51,13 @@ Clone the repo (original, not the fork)
 Create a commit
 Push to Gerrit (git push origin HEAD:refs/for/master)
 ----
+
+= TiddlyWiki Links
+
+* [Organizing Yourself with TiddlyWiki](https://scottnesbitt.info/2017/05/04/tiddlywiki/) by Scott Nesbitt
+* [Exporting Static Sites From Tiddlywiki (v0.1)](https://www.didaxy.com/exporting-static-sites-from-tiddlywiki)
+* [Using Tiddlywiki for World Building ](http://www.david-mullin.com/2017/08/using-tiddlywiki-for-world-building/)
+
+* https://tid.li/tw5/tdn.html#ToDoNow
+
+* https://reidgould.github.io/tiddlywiki-blc-plugin/
