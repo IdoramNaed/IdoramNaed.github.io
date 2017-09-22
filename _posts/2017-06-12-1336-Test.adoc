@@ -31,3 +31,23 @@ https://hackernoon.com/kotlin-a-deeper-look-8569d4da36f
 +
 https://github.com/pllk/cphb
 
+
+== Flow
+
+----
+Pushing code to GitHub requires:
+
+Fork the repo
+Clone the forked repo
+Create a commit
+Push to GitHub
+Click on create pull request
+Confirm and review your pull request message
+... or you install the GitHub CLI, which requires you to learn the 'hub' commands.
+
+Pushing code to Gerrit requires:
+
+Clone the repo (original, not the fork)
+Create a commit
+Push to Gerrit (git push origin HEAD:refs/for/master)
+----
