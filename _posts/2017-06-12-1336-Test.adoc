@@ -55,9 +55,58 @@ Push to Gerrit (git push origin HEAD:refs/for/master)
 = TiddlyWiki Links
 
 * [Organizing Yourself with TiddlyWiki](https://scottnesbitt.info/2017/05/04/tiddlywiki/) by Scott Nesbitt
+
 * [Exporting Static Sites From Tiddlywiki (v0.1)](https://www.didaxy.com/exporting-static-sites-from-tiddlywiki)
+* [Tiddlyserver]https://www.didaxy.com/introduction-to-tiddlyserver) `$ node server`
+   https://groups.google.com/forum/m/#!topic/TiddlyWiki/smqQEGcvsYY
+
 * [Using Tiddlywiki for World Building ](http://www.david-mullin.com/2017/08/using-tiddlywiki-for-world-building/)
 
 * https://tid.li/tw5/tdn.html#ToDoNow
 
 * https://reidgould.github.io/tiddlywiki-blc-plugin/
+
+One simple scenario in which that might happen can be illustrated with one of my favourite examples of a TW5 edition. It’s tool to help teach volleyball students to high school students:
+
+http://pespot.tiddlyspot.com/#Task%201:%5B%5BTask%201%5D%5D%20%5B%5BTask%205%5D%5D%20%5B%5BContent%205%5D%5D%209
+
+
+There’s a few things I think worthy of note:
+
+* As far as I know, the creator of PESpot is not a software developer. Nonetheless, they’ve been able to build the system themselves (perhaps with the help of the community), rather than having to engage a software developer and then explain to them what they want. The difference is profound. When you engage an outsider to build your system you’ve introduced a communication gap into the system: experience shows that it is very hard to describe the requirements of a system that doesn’t exist yet. In contrast, with TiddlyWiki, the author was able to combine their own expertise in the domain with the ability to build the system by incremental trial and error. The incremental approach allows the author to learn by doing, and removes the need for them to be able to state the full requirements up front. For me, that is the enduring magic of TiddlyWiki: to empower people to build their own digital tools without being a conventional software developer
+
+* There’s really no business model for building tools that are so specific to a particular niche. It’s hard to imagine raising VC funding for a software company specialising in high school volleyball
+
+* Although the author was able to successfully build this tool in TiddlyWiki, it’s nature as a single file edition puts a limit on its ease of use. But imagine taking this same wiki and putting in on a server with user accounts and billing. Then the author could sell it as a service that individual high school volleyball coaches could sign up for
+
+So, I think that what is needed here is a sort of wholesale version of TiddlySpace that enables anyone to drop a working single file TiddlyWiki into the system and spin up a full multi-user environment, with user accounts, payments and so on.
+
+
+----
+Sharing a TW on DropBox
+http://tiddlywiki.com/prerelease/#Sharing%20a%20TiddlyWiki%20on%20Dropbox
+
+Sharing your Tiddlers
+http://tiddlywiki.com/prerelease/#Sharing%20your%20tiddlers%20with%20others
+
+https://www.reddit.com/r/TiddlyWiki5/wiki/tutorials
+
+https://github.com/MoHD20/Zim-Tiddlywiki-converter
+
+CardDo: A Task and Project Management Wiki for Getting Stuff Done
+https://groups.google.com/forum/m/#!msg/tiddlywiki/vcxBYq6RjR0/QGBg26npAAAJ
+----
+
+Vannevar Bush's essay was an interesting read and good food for thought. It's online here if anyone else is interested https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/.
+
+My favourite line was this one:
+
+"The world has arrived at an age of cheap complex devices of great reliability; and something is bound to come of it."
+
+I think he was right!
+
+= What is a TiddlyWiki?
+
+TiddlyWiki is an open-source single page application wiki in the form of a single HTML file that includes CSS, JavaScript, and the content.
+It is designed to be easy to customize and re-shape depending on application.
+It facilitates re-use of content by dividing it into small pieces called Tiddlers.
