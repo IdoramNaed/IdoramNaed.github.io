@@ -95,9 +95,19 @@ call plug#end()
 ----
 # Installing Neovim from source on RaspberryPi
 sudo apt-get install git
-sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+sudo apt-get install ninja-build libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 git clone https://github.com/neovim/neovim.git
 cd neovim
-make CMAKE_BUILD_TYPE=RelWithDebInfo
+make CMAKE_BUILD_TYPE=RelWithDebInfo #or Release
 sudo make install
 ----
+
+.install to `~/local/neovim`
+----
+rm -r build/ 
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/local/neovim" 
+make install 
+export PATH="$HOME/local/neovim/bin:$PATH"
+----
+
+https://github.com/neovim/neovim/wiki/Building-Neovim
