@@ -1,0 +1,7 @@
+= Asciidoctor & Gradle
+
+.Links
+. http://www.vogella.com/tutorials/AsciiDoc/article.html
+. https://stackoverflow.com/questions/21039765/process-asciidoc-with-gradle-task
+. http://asciidoctor.github.io/asciidoctor-gradle-examples/
+. http://mrhaki.blogspot.hr/2016/11/awesome-asciidoctor-using-ruby.html
