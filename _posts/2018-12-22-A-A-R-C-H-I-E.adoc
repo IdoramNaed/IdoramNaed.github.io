@@ -1,0 +1,29 @@
+= AARCHIE
+
+.Common architectural principles
+. Separation of concerns
+. Drive UI from a model
+
+.Recommended app architecture
+. Build the user interface
+. Fetch data
+.. Manage dependencies between components
+... Dependency injection (DI)
+... Service locator
+. Connect `ViewModel` and the repository
+. Cache data
+. Persist data
+.. *Single source of truth*: _the database serves as the single source of truth_
+. Show in-progress operations
+. Test each component
+.. User interface and interactions. 
+.. ViewModel
+.. UserRepository
+.. UserDao
+.. Webservice
+.. Testing Artifacts
+
+
+
+
+
