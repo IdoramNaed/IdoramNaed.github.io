@@ -1,0 +1,61 @@
+= AARCHIE: Guide to app architecture
+
+https://developer.android.com/jetpack/docs/guide
+
+.Common architectural principles
+. Separation of concerns
+. Drive UI from a model
+
+.Recommended app architecture
+. Build the user interface
+. Fetch data
++
+> ViewModel delegates the data-fetching process to a new module, a _repository_.
+
+.. Manage dependencies between components
+... Dependency injection (DI)
+... Service locator
+. Connect `ViewModel` and the repository
+. Cache data
+. Persist data
+.. *Single source of truth*: _the database serves as the single source of truth_
+. Show in-progress operations
+. Test each component
+.. User interface and interactions. 
+.. ViewModel
+.. UserRepository
+.. UserDao
+.. Webservice
+.. Testing Artifacts
+
+.Best practices
+. Avoid designating your app's entry points—such as activities, services, and broadcast receivers—as sources of data.
+. Create well-defined boundaries of responsibility between various modules of your app.
+. Expose as little as possible from each module.
+. Consider how to make each module testable in isolation.
+. Focus on the unique core of your app so it stands out from other apps.
+. Persist as much relevant and fresh data as possible.
+. Assign one data source to be the single source of truth.
+
+.Addendum: exposing network status
+. ...
+
+== UI that shows a user profile
+
+.files
+. UserProfileFragment 
+. user_profile_layout.xml
+. UserProfileViewModel 
+. Webservice
++
+> it abstracts the data sources from the rest of the app
+
+
+.ac
+. LiveData
+. MutableLiveData
+
+
+
+
+
