@@ -47,9 +47,10 @@ https://developer.android.com/jetpack/docs/guide
 . user_profile_layout.xml
 . UserProfileViewModel 
 . UserRepository
-. Webservice
 +
 > it abstracts the data sources from the rest of the app
+
+. Webservice
 
 . UserCache
 . User
@@ -63,6 +64,9 @@ https://developer.android.com/jetpack/docs/guide
 . MutableLiveData
 
 
+.deps
+. Dagger 2
+. Retrofit
 
 
 
