@@ -40,7 +40,7 @@ https://developer.android.com/jetpack/docs/guide
 .Addendum: exposing network status
 . ...
 
-== UI that shows a user profile
+=== UI that shows a user profile
 
 .files
 . UserProfileFragment 
@@ -53,6 +53,7 @@ https://developer.android.com/jetpack/docs/guide
 . Webservice
 
 . UserCache
+
 . User
 . UserDatabase
 . UserDao
