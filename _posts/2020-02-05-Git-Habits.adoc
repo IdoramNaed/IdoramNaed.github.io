@@ -7,4 +7,7 @@
 
 .plover
 . `git add -p`
-. `git reset HEAD `^
+. `git reset HEAD ^`
+git diff
+git diff --cached
+git rebase --interactive
