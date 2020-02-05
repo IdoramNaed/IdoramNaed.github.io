@@ -11,3 +11,8 @@
 git diff
 git diff --cached
 git rebase --interactive
+
+git reset --soft
+git reset --mixed
+git reset --hard
+
