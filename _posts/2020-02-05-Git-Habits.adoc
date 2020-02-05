@@ -36,6 +36,13 @@ git vee
 
 git treehash
 
+== tkrajina
+
+merge
+fast-forward
+rebase
+cherry-pick
+squash 
 
 
 
