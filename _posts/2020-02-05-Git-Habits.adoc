@@ -16,3 +16,8 @@ git reset --soft
 git reset --mixed
 git reset --hard
 
+git stash
+...
+git stash pop
+
+git commit --fixup
