@@ -42,7 +42,29 @@ merge
 fast-forward
 rebase
 cherry-pick
-squash 
+squash merge
+
+----
+git merge --no-ff grana
+
+
+git checkout grana
+git rebase master
+# ako nastane confict ....
+git rebase --continue
+# ili
+git rebase --abort
+git checkout master
+git merge grana
+
+git cherry-pick komit
+
+git merge --squash 
+----
+
+== Git Flight Rules
+
+== Git Plumber
 
 
 
