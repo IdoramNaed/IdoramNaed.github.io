@@ -44,13 +44,14 @@ rebase
 cherry-pick
 squash merge
 
+.tkrajina
 ----
 git merge --no-ff grana
 
 
 git checkout grana
 git rebase master
-# ako nastane confict ....
+# ako nastane conflict ....
 git rebase --continue
 # ili
 git rebase --abort
@@ -59,7 +60,7 @@ git merge grana
 
 git cherry-pick komit
 
-git merge --squash 
+git merge --squash grana
 ----
 
 == Git Flight Rules
