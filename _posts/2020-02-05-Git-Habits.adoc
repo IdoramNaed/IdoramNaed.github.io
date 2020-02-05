@@ -7,10 +7,16 @@
 
 .plover
 . `git add -p`
+. git add -u
+. git add fajl
+. git add direktorij
+
 . `git reset HEAD ^`
 git diff
 git diff --cached
 git rebase --interactive
+git rebase -i --autosquash HEAD~6  #specific;SEE::blog
+git rebase grana
 
 git reset --soft
 git reset --mixed
@@ -20,4 +26,17 @@ git stash
 ...
 git stash pop
 
-git commit --fixup
+git commit --fixup ...
+git commit --ammend
+
+git vee grana
+git vee ORIG_HEAD
+git vee remote
+git vee
+
+git treehash
+
+
+
+
+
