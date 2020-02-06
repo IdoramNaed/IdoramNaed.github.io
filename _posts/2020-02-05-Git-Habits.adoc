@@ -63,6 +63,14 @@ git cherry-pick komit
 git merge --squash grana
 ----
 
+== Git for Teams
+detached HEAD state
+
+git checkout master
+git pull --rebase-preserve origin master
+git checkout grana
+git rebase master
+
 == Git Flight Rules
 
 == Git Plumber
